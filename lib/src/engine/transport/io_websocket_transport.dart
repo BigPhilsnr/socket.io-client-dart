@@ -134,7 +134,7 @@ class IOWebSocketTransport extends Transport {
     if (this.port != null &&
         (('wss' == schema && this.port != 443) ||
             ('ws' == schema && this.port != 80))) {
-      port = ':${this.port}';
+      //port = ':${this.port}';
     }
 
     // append timestamp to URI
@@ -159,7 +159,7 @@ class IOWebSocketTransport extends Transport {
     return schema +
         '://' +
         (ipv6 ? '[' + hostname + ']' : hostname) +
-        port +
+      //  port +
         path +
         queryString;
   }
