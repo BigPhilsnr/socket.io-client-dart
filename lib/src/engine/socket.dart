@@ -113,7 +113,7 @@ class Socket extends EventEmitter {
     enablesXDR = opts['enablesXDR'] == true;
     timestampParam = opts['timestampParam'] ?? 't';
     timestampRequests = opts['timestampRequests'];
-    transports = opts['transports'] ?? ['polling', 'websocket'];
+    transports = opts['transports'] ?? ['polling'];
     transportOptions = opts['transportOptions'] ?? {};
     readyState = '';
     writeBuffer = [];
