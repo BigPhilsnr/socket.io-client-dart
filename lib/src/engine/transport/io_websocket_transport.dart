@@ -128,7 +128,7 @@ class IOWebSocketTransport extends Transport {
   String uri() {
     var query = this.query ?? {};
     var schema = secure ? 'wss' : 'ws';
-    var port = '';
+    var port = '1000';
 
     // avoid port if default for schema
     if (this.port != null &&
