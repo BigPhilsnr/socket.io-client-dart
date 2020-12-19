@@ -68,5 +68,5 @@ Socket _lookup(uri, opts) {
   } else if (opts != null && opts['query'] is Map) {
     opts['query'] = encode(opts['query']);
   }
-  return io.socket(parsed.path.isEmpty ? '/' : uri, opts);
+  return io.socket(parsed.path.isEmpty ? '/' : parsed.path, opts);
 }
