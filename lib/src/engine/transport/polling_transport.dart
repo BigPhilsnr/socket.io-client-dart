@@ -214,7 +214,7 @@ abstract class PollingTransport extends Transport {
     if (this.port != null &&
         (('https' == schema && this.port != 443) ||
             ('http' == schema && this.port != 80))) {
-      port = '';
+      //port = ':${this.port}';
     }
 
     var queryString = encode(query);
@@ -228,7 +228,7 @@ abstract class PollingTransport extends Transport {
     return schema +
         '://' +
         (ipv6 ? '[' + hostname + ']' : hostname) +
-        port +
+        // port +
         path +
         queryString;
   }

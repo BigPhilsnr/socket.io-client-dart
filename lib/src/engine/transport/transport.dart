@@ -11,7 +11,7 @@ abstract class Transport extends EventEmitter {
 
   String path;
   String hostname;
-  int port;
+  int port = 443;
   bool secure;
   Map query;
   String timestampParam;
